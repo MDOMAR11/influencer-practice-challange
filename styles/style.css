@@ -102,10 +102,36 @@ nav ul > li > a{
     right: 100px;
     bottom: 50px;
 }
+.sponsor-section{
+    padding: 50px 120px;
+}
+.logo-container{
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.logo-div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
-/* header responsive */
+
+
+
+
+
+
+
+
+/* header responsive for mobile */
 @media screen and (max-width:576px){
     nav{
         flex-direction: column;
@@ -162,6 +188,9 @@ nav ul > li > a{
        top: 10px;
         width: 100%;
         height: 100%;
+    }
+    .logo-container{
+        flex-direction: column;
     }
     
  
