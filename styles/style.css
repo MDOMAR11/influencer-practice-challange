@@ -184,6 +184,32 @@ nav ul > li > a{
     font-weight: 400px;
     padding: 10px 0px;
 }
+footer{
+    padding: 50px 120px;
+    display: flex;
+    justify-content: center;
+    background: #0A0826;
+    color: white;
+    text-align: center;
+}
+.footer-title{
+    font-size: 25px;
+    padding-bottom: 3px;
+}
+.social-icon{
+    padding: 10px 0px;
+}
+.social-icon i{
+    margin-left: 7px;
+    font-size: 20px;
+}
+.see-arrow{
+    color: red;
+    position: relative;
+    left: 90%;
+    padding: 10px 0px;
+    cursor: pointer;
+}
 
 
 
@@ -257,6 +283,9 @@ nav ul > li > a{
     }
     .feature-section{
         padding: 10px;
+    }
+    .see-arrow{
+        left: 80%;
     }
 
 }
