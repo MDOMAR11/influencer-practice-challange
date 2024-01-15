@@ -11,6 +11,7 @@
 /* css nav styles */
 header{
     padding: 50px 120px;
+    
    
 }
 nav{
@@ -74,9 +75,14 @@ nav ul > li > a{
     align-items: center;
     margin: 10px 0px;
     font-size: 16px;
+    cursor: pointer;
 }
 .preebook-btn i{
     padding: 0px 5px;
+    
+}
+.none-radius{
+    border-radius: 0%;
 }
 .circale{
     width: 475px;
@@ -114,8 +120,6 @@ nav ul > li > a{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .logo-div{
-    width: 100px;
-    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,6 +169,21 @@ nav ul > li > a{
     letter-spacing: 0.252px;
 }
 
+.feature-section{
+    padding: 50px 120px;
+}
+.feature-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature-title{
+    font-size: 25px;
+}
+.update-feature-des{
+    font-weight: 400px;
+    padding: 10px 0px;
+}
 
 
 
@@ -178,10 +197,13 @@ nav ul > li > a{
 @media screen and (max-width:576px){
     header{
         padding: 10px ;
+        justify-content: flex-start;
     }
     .content-title{
         text-align: left;
-        font-size: 18px;
+        font-size: 25px;
+        line-height: 30px;
+        padding-bottom: 10px;
     }
     .banner-description{
         font-size: 16px;
@@ -200,28 +222,41 @@ nav ul > li > a{
         flex-direction: column;
     }
     .sponsor-section{
-        padding: 10px;
+        padding: 0px;
+
     }
     .logo-container{
-        flex-direction: column;
-        padding: 0px;
-        width: 100%;
-        
+      flex-direction: column;
+      padding: 10px 0px;
+      justify-content: left;
+      width: 100%;
+    }
+    .logo-div{
+        margin-top: 20px;
     }
     .card-section{
         padding: 10px;
     }
-    .card-section-caption{
-        text-align: left;
-    }
     .card-container{
         grid-template-columns: repeat(1,1fr);
-        width: 100%;
-        
     }
-    .card{
-        width: 100%;
+    .circale{
+        width: 300px;
+        height: 300px;
     }
-    
+
+    .circale img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+    .feature-container{
+        flex-direction: column;
+    }
+    .feature-section{
+        padding: 10px;
+    }
 
 }
